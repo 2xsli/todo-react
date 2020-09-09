@@ -5,7 +5,16 @@ import Badge from '../Badge';
 
 import './List.scss';
 
-const List = ({ items, isRevomable, onClick }) => {
+import closeSvg from '../../assets/img/Close.svg';
+
+const List = ({ items, isRemovable, onClick, onRemove }) => {
+
+    const removeList = (item) => {
+        if (window.confirm('Вы действительно хотите удалить список?')) {
+            onRemove(item);
+        }
+    }
+
     return (
         <ul onClick={onClick} className="list">
             {
@@ -17,6 +26,13 @@ const List = ({ items, isRevomable, onClick }) => {
                         )}
                     </i>
                     <span>{item.name}</span>
+                    {isRemovable && (
+                        <img  className="list__remove-btn" 
+                              src={closeSvg} 
+                              alt="close button" 
+                              onClick={() => removeList(item)}
+                        />
+                    )}
                 </li>
             ))}
             

@@ -15,6 +15,7 @@ body {
 }
 
 .todo {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,6 +31,11 @@ body {
         padding: 60px 20px;
         background-color: #f4f6f8;
         border-right: 1px solid #f1f1f1;
+    }
+
+    &__tasks {
+        flex: 1;
+        padding: 60px;
     }
 }
 
