@@ -1,0 +1,39 @@
+.list {
+    margin-bottom: 30px;
+
+    &__add-btn {
+        opacity: .6;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+        &.active {
+            background-color: #fff;
+            box-shadow: 20px 20px 80px #cacaca;
+            border-radius: 4px;
+        }
+
+        .badge {
+            position: relative;
+            left: 2.5px;
+        }
+
+        i {
+            display: inline-flex;
+            margin-right: 10px;
+
+            svg {
+                fill: #7c7c7c;
+            }
+        }
+    }
+}
