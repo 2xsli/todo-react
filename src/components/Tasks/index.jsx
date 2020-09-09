@@ -18,7 +18,7 @@ const Tasks = () => {
                         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="10px" height="10px"><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M4 16L11 23 27 7"/></svg>
                     </label>
                 </div>
-                <p>ReactJS Hooks (useState, useReduser, useEffect и т.д.)</p>
+                <input value="ReactJS Hooks (useState, useReduser, useEffect и т.д.)" />
             </div>
           </div>
         </div>
