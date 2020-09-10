@@ -1,18 +1,38 @@
 import React from 'react';
+import axios from 'axios';
+
+import AddTaskForm from './AddTaskForm';
 
 import './Tasks.scss';
 
-const Tasks = ({ list }) => {
-    console.log(list);
+const Tasks = ({ list, onEditTitle, onAddTask }) => {
+    
+    const editTitle = () => {
+        const newTitle = window.prompt('Название списка', list.name);
+        if (newTitle) {
+            onEditTitle(list.id, newTitle);
+            axios
+                .patch('http://localhost:3030/lists/' + list.id, {
+                    name: newTitle
+                })
+                .catch(() => {
+                    alert('Не удалось обновить название списка!');
+                });
+        }
+    }
 
     return (
         <div className="tasks">
           <h2 className="tasks__title">
               {list.name}
-              <img className="tasks__icon" src="https://img.icons8.com/ios-glyphs/30/000000/ball-point-pen.png"/>
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/ball-point-pen.png" 
+                   alt="edit icon"
+                   onClick={editTitle}
+              />
           </h2>
 
           <div className="tasks__items">
+            {!list.tasks.length && <h2>Задачи отсутствуют</h2>}
             {
                 list.tasks.map(task => 
                     <div key={task.id} className="tasks__items-row">
@@ -26,6 +46,8 @@ const Tasks = ({ list }) => {
                     </div>
                 )
             }
+
+            <AddTaskForm list={list} onAddTask={onAddTask} />
 
           </div>
         </div>

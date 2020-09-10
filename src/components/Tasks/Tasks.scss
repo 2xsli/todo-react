@@ -30,6 +30,16 @@
     &__items{
         margin-top: 30px;
 
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 22px;
+            font-weight: 700;
+            color: #c9d1d3;
+            text-align: center;
+        }
+
         &-row {
             display: flex;
             align-items: center;
@@ -40,6 +50,44 @@
                 margin-left: 15px;
                 border: none;
                 width: 100%;
+            }
+        }
+    }
+
+    &__form {
+        &-new {
+            opacity: .6;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            cursor: pointer;
+            
+            img {
+                width: 24px;
+                height: 24px;
+                opacity: .3;
+                margin-right: 10px;
+                margin-left: 0;
+                transition: opacity 0.15s ease-in-out;
+
+                &:hover {
+                    opacity: .3;
+                }
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &-block {
+            .button {
+                margin-top: 15px;
+                margin-right: 10px;
             }
         }
     }
