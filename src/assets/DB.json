@@ -23,20 +23,20 @@
   ],
   "tasks": [
     {
-      "id": 3,
-      "listID": 2,
+      "id": 1,
+      "listId": 2,
       "text": "ReactJS Hooks (useState, useReduser, useEffect и т.д.)",
       "completed": true
     },
     {
-      "id": 4,
-      "listID": 2,
+      "id": 2,
+      "listId": 2,
       "text": "Redux (redux-observable, redux-saga)",
       "completed": false
     },
     {
-        "id": 5,
-        "listID": 2,
+        "id": 3,
+        "listId": 2,
         "text": "Something",
         "completed": false
     }

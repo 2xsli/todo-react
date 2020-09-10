@@ -8,7 +8,7 @@ const App = () => {
   const [colors, setColors] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3030/lists?_expand=color').then(({ data }) => {
+    axios.get('http://localhost:3030/lists?_expand=color&_embed=tasks').then(({ data }) => {
       setLists(data);
     });
     axios.get('http://localhost:3030/colors').then(({ data }) => {
@@ -48,7 +48,7 @@ const App = () => {
       </div>
 
       <div className="todo__tasks">
-        <Tasks />
+        {lists && <Tasks list={lists[1]}/>}
       </div>
     </div>
   );
