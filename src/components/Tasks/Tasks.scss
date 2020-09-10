@@ -23,6 +23,7 @@
 
         &:hover {
             opacity: .6;
+            transition: opacity 0.15s ease-in-out;
         }
     }
 
@@ -69,6 +70,7 @@
             border: 2px solid #e8e8e8;
             border-radius: 30px;
             cursor: pointer;
+            transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 
             svg {
                 opacity: 0;

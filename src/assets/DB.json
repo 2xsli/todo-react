@@ -1,22 +1,86 @@
 {
-    "lists": [
-        {"id": 1, "colorID": 5, "name": "Покупки"},
-        {"id": 2, "colorID": 4, "name": "Фронтенд"},
-        {"id": 3, "colorID": 3, "name": "Фильмы и сериалы"},
-        {"id": 4, "colorID": 2, "name": "Книги"},
-        {"id": 5, "colorID": 1, "name": "Личное"}      
-    ],
-    "tasks": [
-
-    ],
-    "colors": [
-        {"id": 1, "hex": "#C9D1D3", "name": "gray"},
-        {"id": 2, "hex": "#42B883", "name": "green"},
-        {"id": 3, "hex": "#64C4ED", "name": "blue"},
-        {"id": 4, "hex": "#FFBBCC", "name": "pink"},
-        {"id": 5, "hex": "#B6E6BD", "name": "lime"},
-        {"id": 6, "hex": "#C355F5", "name": "purple"},
-        {"id": 7, "hex": "#110133", "name": "black"},
-        {"id": 8, "hex": "#FF6464", "name": "red"}
-    ]
+  "lists": [
+    {
+      "colorId": 4,
+      "name": "222",
+      "id": 1
+    },
+    {
+      "colorId": 3,
+      "name": "Frontend",
+      "id": 2
+    },
+    {
+      "colorId": 7,
+      "name": "вфвфы",
+      "id": 3
+    },
+    {
+      "colorId": 8,
+      "name": "хахахаха",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 3,
+      "listID": 2,
+      "text": "ReactJS Hooks (useState, useReduser, useEffect и т.д.)",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "listID": 2,
+      "text": "Redux (redux-observable, redux-saga)",
+      "completed": false
+    },
+    {
+        "id": 5,
+        "listID": 2,
+        "text": "Something",
+        "completed": false
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3",
+      "name": "gray"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC",
+      "name": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#FF6464",
+      "name": "red"
+    }
+  ]
 }

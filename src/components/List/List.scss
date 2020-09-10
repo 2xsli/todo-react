@@ -17,9 +17,11 @@
         padding: 10px 12px;
         margin-bottom: 5px;
         cursor: pointer;
+        transition: background-color 0.15s ease-in-out;
 
         &:hover #{$self}__remove-btn {
             opacity: .3;
+            transition: opacity 0.15s ease-in-out;
         }
 
         #{$self}__remove-btn {
