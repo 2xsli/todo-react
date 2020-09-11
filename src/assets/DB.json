@@ -1,79 +1,46 @@
 {
   "lists": [
     {
-      "colorId": 4,
-      "name": "lol wtf",
+      "colorId": 3,
+      "name": "Фронтенд",
       "id": 1
     },
     {
-      "colorId": 3,
-      "name": "Frontend",
+      "colorId": 1,
+      "name": "Бекенд",
       "id": 2
-    },
-    {
-      "colorId": 7,
-      "name": "вфвфы",
-      "id": 3
-    },
-    {
-      "colorId": 8,
-      "name": "хахахаха",
-      "id": 4
-    },
-    {
-      "colorId": 5,
-      "name": "Филмы и сериалы и еще ",
-      "id": 5
     }
   ],
   "tasks": [
     {
-      "id": 1,
-      "listId": 2,
-      "text": "ReactJS Hooks (useState, useReduser, useEffect и т.д.)",
-      "completed": true
+      "listId": 1,
+      "text": "React-router изучить хуки",
+      "completed": false,
+      "id": 1
     },
     {
-      "id": 2,
-      "listId": 2,
-      "text": "Redux (redux-observable, redux-saga)",
-      "completed": false
+      "listId": 1,
+      "text": "JavaScript промисы",
+      "completed": false,
+      "id": 2
     },
     {
-      "id": 3,
-      "listId": 2,
-      "text": "Something",
-      "completed": false
+      "listId": 1,
+      "text": "Анимация на React",
+      "completed": false,
+      "id": 3
     },
     {
-      "litsId": 1,
-      "text": "123",
+      "listId": 2,
+      "text": "Firebase и всё что с этим связано",
       "completed": false,
       "id": 4
     },
     {
-      "litsId": 1,
-      "text": "123123",
+      "listId": 2,
+      "text": "Захостить json-server",
       "completed": false,
       "id": 5
-    },
-    {
-      "litsId": 2,
-      "text": "Ololol",
-      "completed": false,
-      "id": 6
-    },
-    {
-      "litsId": 3,
-      "text": "1232131",
-      "completed": false,
-      "id": 7
-    },
-    {
-      "litsId": 1,
-      "text": "asdsad",
-      "completed": false,
-      "id": 8
     }
   ],
   "colors": [

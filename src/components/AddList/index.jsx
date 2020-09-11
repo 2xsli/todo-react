@@ -31,15 +31,18 @@ const AddList = ({ colors, onAdd }) => {
         }
         setIsLoading(true);
         axios
-            .post('http://localhost:3030/lists', {
+            .post('http://localhost:3003/lists', {
                 colorId: selectedColor, 
                 name: inputValue
             })
             .then(({ data }) => {
-                const color = colors.find(c => c.id === selectedColor).name;
-                const listObj = {...data, color: { name: color }};
+                const color = colors.find(c => c.id === selectedColor);
+                const listObj = {...data, color, tasks: [] };
                 onAdd(listObj);
                 onClose();
+            })
+            .catch(() => {
+                alert('Ошибка при добавлении списка!');
             })
             .finally(() => {
                 setIsLoading(false);
@@ -67,6 +70,7 @@ const AddList = ({ colors, onAdd }) => {
                 <img onClick={onClose} 
                      className="list-add__popup-close-btn" 
                      src="https://img.icons8.com/color/26/000000/close-window.png"
+                     alt="Close button"
                 />
                 <div className="list-add__popup-colors">
             
